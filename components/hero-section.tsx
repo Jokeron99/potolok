@@ -22,25 +22,25 @@ export function HeroSection() {
         <div className="grid lg:grid-cols-2 gap-8 lg:gap-12 items-center py-10 lg:py-14">
           {/* Text content */}
           <div className="flex flex-col gap-5 lg:gap-6">
-            <div className="inline-flex items-center gap-2 bg-accent/10 text-accent rounded-full px-4 py-2 text-sm font-medium w-fit">
-              <Shield className="h-4 w-4" />
+            <div className="inline-flex items-center gap-2 bg-accent/10 text-accent rounded-full px-3 py-1.5 sm:px-4 sm:py-2 text-xs sm:text-sm font-medium w-fit">
+              <Shield className="h-3.5 w-3.5 sm:h-4 sm:w-4 shrink-0" />
               {"Гарантия 15 лет по договору"}
             </div>
 
-            <h1 className="font-serif text-3xl sm:text-4xl lg:text-5xl font-bold leading-tight text-foreground text-balance">
+            <h1 className="font-serif text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold leading-tight text-foreground text-balance">
               {"Идеально ровные потолки "}
               <span className="text-accent">{"без пыли"}</span>
               {" и запаха"}
             </h1>
 
-            <p className="text-lg text-muted-foreground leading-relaxed max-w-lg">
+            <p className="text-base sm:text-lg text-muted-foreground leading-relaxed max-w-lg">
               {"Монтаж со строительным пылесосом \u2014 обои останутся чистыми. Премиальные полотна с UV-защитой не желтеют. Замер и расчёт \u2014 бесплатно."}
             </p>
 
             <div className="flex flex-col sm:flex-row gap-3">
               <Button
                 size="lg"
-                className="bg-accent text-accent-foreground hover:bg-accent/90 text-base px-8 py-6"
+                className="bg-accent text-accent-foreground hover:bg-accent/90 text-sm sm:text-base px-6 py-5 sm:px-8 sm:py-6 w-full sm:w-auto"
                 onClick={() => scrollTo("calculator")}
               >
                 {"Рассчитать стоимость"}
@@ -49,15 +49,15 @@ export function HeroSection() {
               <Button
                 size="lg"
                 variant="outline"
-                className="text-base px-8 py-6 border-border text-foreground hover:bg-secondary"
+                className="text-sm sm:text-base px-6 py-5 sm:px-8 sm:py-6 border-border text-foreground hover:bg-secondary w-full sm:w-auto"
                 onClick={() => scrollTo("contact")}
               >
                 {"Вызвать замерщика \u2014 0 \u20BD"}
               </Button>
             </div>
 
-            <div className="flex items-center gap-2 text-sm text-muted-foreground">
-              <span className="inline-block h-2 w-2 rounded-full bg-green-500 animate-pulse" />
+            <div className="flex items-start sm:items-center gap-2 text-xs sm:text-sm text-muted-foreground">
+              <span className="inline-block h-2 w-2 rounded-full bg-green-500 animate-pulse shrink-0 mt-1 sm:mt-0" />
               {"Светильники в подарок + скидка 2 500\u20BD при заказе до 28 февраля"}
             </div>
           </div>
@@ -72,15 +72,15 @@ export function HeroSection() {
               priority
               sizes="(max-width: 768px) 100vw, 50vw"
             />
-            <div className="absolute bottom-4 left-4 right-4 bg-background/90 backdrop-blur-sm rounded-xl p-4">
-              <div className="grid grid-cols-2 sm:grid-cols-4 gap-3">
+            <div className="absolute bottom-2 left-2 right-2 sm:bottom-4 sm:left-4 sm:right-4 bg-background/90 backdrop-blur-sm rounded-lg sm:rounded-xl p-2.5 sm:p-4">
+              <div className="grid grid-cols-2 sm:grid-cols-4 gap-2 sm:gap-3">
                 {badges.map((badge) => (
                   <div
                     key={badge.label}
-                    className="flex flex-col items-center gap-1 text-center"
+                    className="flex flex-col items-center gap-0.5 sm:gap-1 text-center"
                   >
-                    <badge.icon className="h-5 w-5 text-accent" />
-                    <span className="text-xs font-medium text-foreground">
+                    <badge.icon className="h-4 w-4 sm:h-5 sm:w-5 text-accent" />
+                    <span className="text-[10px] sm:text-xs font-medium text-foreground leading-tight">
                       {badge.label}
                     </span>
                   </div>

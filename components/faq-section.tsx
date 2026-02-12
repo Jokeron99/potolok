@@ -38,13 +38,13 @@ const faqs = [
 
 export function FaqSection() {
   return (
-    <section id="faq" className="py-16 lg:py-24">
+    <section id="faq" className="py-10 sm:py-16 lg:py-24">
       <div className="mx-auto max-w-3xl px-4 lg:px-8">
-        <div className="text-center mb-12">
-          <p className="text-sm font-semibold uppercase tracking-wider text-accent mb-3">
+        <div className="text-center mb-8 sm:mb-12">
+          <p className="text-xs sm:text-sm font-semibold uppercase tracking-wider text-accent mb-2 sm:mb-3">
             {"FAQ"}
           </p>
-          <h2 className="font-serif text-3xl sm:text-4xl font-bold text-foreground text-balance">
+          <h2 className="font-serif text-2xl sm:text-3xl md:text-4xl font-bold text-foreground text-balance">
             {"Частые вопросы"}
           </h2>
         </div>
@@ -52,7 +52,7 @@ export function FaqSection() {
         <Accordion type="single" collapsible className="w-full">
           {faqs.map((faq, i) => (
             <AccordionItem key={i} value={`item-${i}`} className="border-border">
-              <AccordionTrigger className="text-left text-foreground hover:text-accent py-5 text-base">
+              <AccordionTrigger className="text-left text-foreground hover:text-accent py-4 sm:py-5 text-sm sm:text-base">
                 {faq.q}
               </AccordionTrigger>
               <AccordionContent className="text-muted-foreground leading-relaxed pb-5">

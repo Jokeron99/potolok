@@ -29,18 +29,18 @@ const problems = [
 
 export function ProblemsSection() {
   return (
-    <section className="py-16 lg:py-24 bg-secondary/50">
+    <section className="py-10 sm:py-16 lg:py-24 bg-secondary/50">
       <div className="mx-auto max-w-7xl px-4 lg:px-8">
-        <div className="text-center mb-12">
-          <p className="text-sm font-semibold uppercase tracking-wider text-accent mb-3">
+        <div className="text-center mb-8 sm:mb-12">
+          <p className="text-xs sm:text-sm font-semibold uppercase tracking-wider text-accent mb-2 sm:mb-3">
             {"Знакомая ситуация?"}
           </p>
-          <h2 className="font-serif text-3xl sm:text-4xl font-bold text-foreground text-balance">
+          <h2 className="font-serif text-2xl sm:text-3xl md:text-4xl font-bold text-foreground text-balance">
             {"Почему откладывать ремонт \u2014 плохая идея"}
           </h2>
         </div>
 
-        <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6">
           {problems.map((problem) => (
             <div
               key={problem.title}

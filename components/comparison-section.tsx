@@ -16,20 +16,20 @@ const ourItems = [
 
 export function ComparisonSection() {
   return (
-    <section className="py-16 lg:py-24 bg-secondary/50">
+    <section className="py-10 sm:py-16 lg:py-24 bg-secondary/50">
       <div className="mx-auto max-w-7xl px-4 lg:px-8">
-        <div className="text-center mb-12">
-          <p className="text-sm font-semibold uppercase tracking-wider text-accent mb-3">
+        <div className="text-center mb-8 sm:mb-12">
+          <p className="text-xs sm:text-sm font-semibold uppercase tracking-wider text-accent mb-2 sm:mb-3">
             {"Сравнение"}
           </p>
-          <h2 className="font-serif text-3xl sm:text-4xl font-bold text-foreground text-balance">
+          <h2 className="font-serif text-2xl sm:text-3xl md:text-4xl font-bold text-foreground text-balance">
             {'Почему выбирают нас, а не "частников с Авито"?'}
           </h2>
         </div>
 
-        <div className="grid md:grid-cols-2 gap-6 max-w-4xl mx-auto">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-4 sm:gap-6 max-w-4xl mx-auto">
           {/* Competitors */}
-          <div className="rounded-xl border border-border bg-background p-6 lg:p-8">
+          <div className="rounded-xl border border-border bg-background p-5 sm:p-6 lg:p-8">
             <div className="flex items-center gap-3 mb-6">
               <div className="h-10 w-10 rounded-full bg-destructive/10 flex items-center justify-center">
                 <X className="h-5 w-5 text-destructive" />
@@ -49,7 +49,7 @@ export function ComparisonSection() {
           </div>
 
           {/* Us */}
-          <div className="rounded-xl border-2 border-accent bg-background p-6 lg:p-8 relative">
+          <div className="rounded-xl border-2 border-accent bg-background p-5 sm:p-6 lg:p-8 relative">
             <div className="absolute -top-3 left-6 bg-accent text-accent-foreground text-xs font-semibold px-3 py-1 rounded-full">
               {"Альянс Мастеров"}
             </div>

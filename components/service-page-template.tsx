@@ -40,24 +40,24 @@ export function ServicePageTemplate({ service }: ServicePageTemplateProps) {
       </div>
 
       {/* Hero */}
-      <section className="py-12 lg:py-20">
+      <section className="py-8 sm:py-12 lg:py-20">
         <div className="mx-auto max-w-7xl px-4 lg:px-8">
-          <div className="grid lg:grid-cols-2 gap-10 items-center">
+          <div className="grid lg:grid-cols-2 gap-8 lg:gap-10 items-center">
             <div>
-              <div className="inline-flex items-center gap-2 bg-accent/10 text-accent text-sm font-semibold px-3 py-1.5 rounded-full mb-5">
+              <div className="inline-flex items-center gap-2 bg-accent/10 text-accent text-xs sm:text-sm font-semibold px-3 py-1.5 rounded-full mb-4 sm:mb-5">
                 {`от ${service.priceFrom} ${service.priceUnit}`}
               </div>
-              <h1 className="font-serif text-3xl sm:text-4xl lg:text-5xl font-bold text-foreground text-balance mb-5 leading-tight">
+              <h1 className="font-serif text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-foreground text-balance mb-4 sm:mb-5 leading-tight">
                 {service.title}
               </h1>
-              <p className="text-muted-foreground leading-relaxed mb-6 max-w-lg text-lg">
+              <p className="text-muted-foreground leading-relaxed mb-5 sm:mb-6 max-w-lg text-base sm:text-lg">
                 {service.heroDescription}
               </p>
-              <div className="flex flex-col sm:flex-row gap-3 mb-8">
+              <div className="flex flex-col sm:flex-row gap-3 mb-6 sm:mb-8">
                 <Button
                   asChild
                   size="lg"
-                  className="bg-accent text-accent-foreground hover:bg-accent/90 text-base px-8 py-6"
+                  className="bg-accent text-accent-foreground hover:bg-accent/90 text-sm sm:text-base px-6 py-5 sm:px-8 sm:py-6 w-full sm:w-auto"
                 >
                   <Link href="/#contact">
                     <ArrowRight className="mr-2 h-4 w-4" />
@@ -68,7 +68,7 @@ export function ServicePageTemplate({ service }: ServicePageTemplateProps) {
                   asChild
                   variant="outline"
                   size="lg"
-                  className="text-base px-8 py-6"
+                  className="text-sm sm:text-base px-6 py-5 sm:px-8 sm:py-6 w-full sm:w-auto"
                 >
                   <Link href="/#calculator">
                     {"\u0420\u0430\u0441\u0441\u0447\u0438\u0442\u0430\u0442\u044C \u0441\u0442\u043E\u0438\u043C\u043E\u0441\u0442\u044C"}
@@ -187,8 +187,8 @@ export function ServicePageTemplate({ service }: ServicePageTemplateProps) {
           <h2 className="font-serif text-2xl sm:text-3xl font-bold text-foreground mb-8">
             {"\u0426\u0435\u043D\u044B"}
           </h2>
-          <div className="border border-border rounded-xl overflow-hidden">
-            <Table>
+          <div className="border border-border rounded-xl overflow-x-auto">
+            <Table className="min-w-[400px]">
               <TableHeader>
                 <TableRow className="bg-secondary/50">
                   <TableHead className="text-foreground font-semibold">{"\u0423\u0441\u043B\u0443\u0433\u0430"}</TableHead>

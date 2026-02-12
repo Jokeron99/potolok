@@ -40,21 +40,21 @@ export function GallerySection() {
   const [activeIndex, setActiveIndex] = useState<number | null>(null);
 
   return (
-    <section id="gallery" className="py-16 lg:py-24 bg-secondary/50">
+    <section id="gallery" className="py-10 sm:py-16 lg:py-24 bg-secondary/50">
       <div className="mx-auto max-w-7xl px-4 lg:px-8">
-        <div className="text-center mb-12">
-          <p className="text-sm font-semibold uppercase tracking-wider text-accent mb-3">
+        <div className="text-center mb-8 sm:mb-12">
+          <p className="text-xs sm:text-sm font-semibold uppercase tracking-wider text-accent mb-2 sm:mb-3">
             {"Портфолио"}
           </p>
-          <h2 className="font-serif text-3xl sm:text-4xl font-bold text-foreground text-balance">
+          <h2 className="font-serif text-2xl sm:text-3xl md:text-4xl font-bold text-foreground text-balance">
             {"Фото наших готовых работ"}
           </h2>
-          <p className="text-muted-foreground mt-3 max-w-lg mx-auto">
+          <p className="text-sm sm:text-base text-muted-foreground mt-2 sm:mt-3 max-w-lg mx-auto">
             {"Каждый проект \u2014 от замера до финальной уборки \u2014 выполнен с максимальной аккуратностью"}
           </p>
         </div>
 
-        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3 sm:gap-4">
           {works.map((work, i) => (
             <button
               key={work.src}

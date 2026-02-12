@@ -130,12 +130,12 @@ export function PortfolioGallery() {
       {/* Filter tabs */}
       <section className="pb-12 lg:pb-16">
         <div className="mx-auto max-w-7xl px-4 lg:px-8">
-          <div className="flex flex-wrap items-center gap-2 justify-center mb-10">
+          <div className="flex items-center gap-2 justify-start sm:justify-center mb-8 sm:mb-10 overflow-x-auto pb-2 -mx-4 px-4 sm:mx-0 sm:px-0 sm:flex-wrap scrollbar-hide">
             {categories.map((cat) => (
               <button
                 key={cat.id}
                 onClick={() => setActiveCategory(cat.id)}
-                className={`px-4 py-2 rounded-full text-sm font-medium transition-colors ${
+                className={`px-3.5 py-2 rounded-full text-sm font-medium transition-colors whitespace-nowrap shrink-0 ${
                   activeCategory === cat.id
                     ? "bg-accent text-accent-foreground"
                     : "bg-secondary text-muted-foreground hover:text-foreground hover:bg-secondary/80"
@@ -146,7 +146,7 @@ export function PortfolioGallery() {
             ))}
           </div>
 
-          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3 sm:gap-4">
             {filtered.map((work) => (
               <button
                 key={work.src}
@@ -181,7 +181,7 @@ export function PortfolioGallery() {
 
       {/* Modal */}
       <Dialog open={!!selectedWork} onOpenChange={() => setSelectedWork(null)}>
-        <DialogContent className="max-w-2xl p-0 overflow-hidden">
+        <DialogContent className="max-w-[95vw] sm:max-w-2xl p-0 overflow-hidden">
           {selectedWork && (
             <>
               <div className="relative aspect-[16/10]">

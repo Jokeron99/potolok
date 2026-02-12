@@ -10,10 +10,10 @@ export function Footer() {
 
   return (
     <footer className="bg-foreground text-background border-t border-background/10">
-      <div className="mx-auto max-w-7xl px-4 lg:px-8 py-12">
-        <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-8">
+      <div className="mx-auto max-w-7xl px-4 lg:px-8 py-8 sm:py-12">
+        <div className="grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8">
           {/* Brand */}
-          <div>
+          <div className="col-span-2 sm:col-span-2 lg:col-span-1">
             <div className="flex items-center gap-2 mb-4">
               <div className="h-9 w-9 rounded-lg bg-accent flex items-center justify-center">
                 <span className="text-accent-foreground font-bold text-sm">AM</span>

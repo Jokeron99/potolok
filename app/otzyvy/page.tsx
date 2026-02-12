@@ -111,41 +111,41 @@ export default function ReviewsPage() {
       </div>
 
       {/* Header + Stats */}
-      <section className="py-12 lg:py-16">
+      <section className="py-8 sm:py-12 lg:py-16">
         <div className="mx-auto max-w-7xl px-4 lg:px-8">
-          <div className="text-center mb-12">
-            <p className="text-sm font-semibold uppercase tracking-wider text-accent mb-3">
+          <div className="text-center mb-8 sm:mb-12">
+            <p className="text-xs sm:text-sm font-semibold uppercase tracking-wider text-accent mb-2 sm:mb-3">
               {"\u041E\u0442\u0437\u044B\u0432\u044B \u043A\u043B\u0438\u0435\u043D\u0442\u043E\u0432"}
             </p>
-            <h1 className="font-serif text-3xl sm:text-4xl lg:text-5xl font-bold text-foreground text-balance mb-4">
+            <h1 className="font-serif text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-foreground text-balance mb-3 sm:mb-4">
               {"\u0413\u043E\u0432\u043E\u0440\u044F\u0442 \u0432\u0430\u0448\u0438 \u0441\u043E\u0441\u0435\u0434\u0438"}
             </h1>
-            <p className="text-muted-foreground max-w-lg mx-auto leading-relaxed">
+            <p className="text-sm sm:text-base text-muted-foreground max-w-lg mx-auto leading-relaxed">
               {"\u0427\u0435\u0441\u0442\u043D\u044B\u0435 \u043E\u0442\u0437\u044B\u0432\u044B \u043E\u0442 \u043D\u0430\u0448\u0438\u0445 \u043A\u043B\u0438\u0435\u043D\u0442\u043E\u0432 \u0438\u0437 \u0420\u043E\u0441\u0442\u043E\u0432\u0430-\u043D\u0430-\u0414\u043E\u043D\u0443 \u0438 \u043E\u0431\u043B\u0430\u0441\u0442\u0438"}
             </p>
           </div>
 
           {/* Stats bar */}
-          <div className="grid sm:grid-cols-3 gap-4 max-w-2xl mx-auto mb-14">
-            <div className="flex flex-col items-center gap-2 bg-secondary/50 rounded-xl p-6 border border-border">
-              <Award className="h-6 w-6 text-accent" />
-              <span className="text-2xl font-bold text-foreground">{avgRating}</span>
-              <span className="text-xs text-muted-foreground">{"\u0421\u0440\u0435\u0434\u043D\u044F\u044F \u043E\u0446\u0435\u043D\u043A\u0430"}</span>
+          <div className="grid grid-cols-3 gap-3 sm:gap-4 max-w-2xl mx-auto mb-8 sm:mb-14">
+            <div className="flex flex-col items-center gap-1.5 sm:gap-2 bg-secondary/50 rounded-xl p-4 sm:p-6 border border-border">
+              <Award className="h-5 w-5 sm:h-6 sm:w-6 text-accent" />
+              <span className="text-xl sm:text-2xl font-bold text-foreground">{avgRating}</span>
+              <span className="text-[10px] sm:text-xs text-muted-foreground text-center leading-tight">{"\u0421\u0440\u0435\u0434\u043D\u044F\u044F \u043E\u0446\u0435\u043D\u043A\u0430"}</span>
             </div>
-            <div className="flex flex-col items-center gap-2 bg-secondary/50 rounded-xl p-6 border border-border">
-              <Users className="h-6 w-6 text-accent" />
-              <span className="text-2xl font-bold text-foreground">{"500+"}</span>
-              <span className="text-xs text-muted-foreground">{"\u0412\u044B\u043F\u043E\u043B\u043D\u0435\u043D\u043D\u044B\u0445 \u043F\u0440\u043E\u0435\u043A\u0442\u043E\u0432"}</span>
+            <div className="flex flex-col items-center gap-1.5 sm:gap-2 bg-secondary/50 rounded-xl p-4 sm:p-6 border border-border">
+              <Users className="h-5 w-5 sm:h-6 sm:w-6 text-accent" />
+              <span className="text-xl sm:text-2xl font-bold text-foreground">{"500+"}</span>
+              <span className="text-[10px] sm:text-xs text-muted-foreground text-center leading-tight">{"\u0412\u044B\u043F\u043E\u043B\u043D\u0435\u043D\u043D\u044B\u0445 \u043F\u0440\u043E\u0435\u043A\u0442\u043E\u0432"}</span>
             </div>
-            <div className="flex flex-col items-center gap-2 bg-secondary/50 rounded-xl p-6 border border-border">
-              <ThumbsUp className="h-6 w-6 text-accent" />
-              <span className="text-2xl font-bold text-foreground">{"98%"}</span>
-              <span className="text-xs text-muted-foreground">{"\u0420\u0435\u043A\u043E\u043C\u0435\u043D\u0434\u0443\u044E\u0442 \u043D\u0430\u0441"}</span>
+            <div className="flex flex-col items-center gap-1.5 sm:gap-2 bg-secondary/50 rounded-xl p-4 sm:p-6 border border-border">
+              <ThumbsUp className="h-5 w-5 sm:h-6 sm:w-6 text-accent" />
+              <span className="text-xl sm:text-2xl font-bold text-foreground">{"98%"}</span>
+              <span className="text-[10px] sm:text-xs text-muted-foreground text-center leading-tight">{"\u0420\u0435\u043A\u043E\u043C\u0435\u043D\u0434\u0443\u044E\u0442 \u043D\u0430\u0441"}</span>
             </div>
           </div>
 
           {/* Reviews grid */}
-          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-5">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-5">
             {allReviews.map((review) => (
               <div
                 key={review.name}

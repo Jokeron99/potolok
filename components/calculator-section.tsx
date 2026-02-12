@@ -82,19 +82,19 @@ export function CalculatorSection() {
   }
 
   return (
-    <section id="calculator" className="py-16 lg:py-24">
+    <section id="calculator" className="py-10 sm:py-16 lg:py-24">
       <div className="mx-auto max-w-3xl px-4 lg:px-8">
-        <div className="text-center mb-10">
-          <p className="text-sm font-semibold uppercase tracking-wider text-accent mb-3">
-            <Calculator className="inline h-4 w-4 mr-1" />
+        <div className="text-center mb-8 sm:mb-10">
+          <p className="text-xs sm:text-sm font-semibold uppercase tracking-wider text-accent mb-2 sm:mb-3">
+            <Calculator className="inline h-3.5 w-3.5 sm:h-4 sm:w-4 mr-1" />
             {"Калькулятор стоимости"}
           </p>
-          <h2 className="font-serif text-3xl sm:text-4xl font-bold text-foreground text-balance">
+          <h2 className="font-serif text-2xl sm:text-3xl md:text-4xl font-bold text-foreground text-balance">
             {"Ответьте на 3 вопроса и получите расчёт + подарок"}
           </h2>
         </div>
 
-        <div className="bg-background border border-border rounded-2xl p-6 lg:p-10 shadow-sm">
+        <div className="bg-background border border-border rounded-xl sm:rounded-2xl p-4 sm:p-6 lg:p-10 shadow-sm">
           {/* Progress */}
           <div className="flex items-center gap-2 mb-8">
             {[1, 2, 3, 4].map((s) => (

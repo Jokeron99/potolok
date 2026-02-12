@@ -15,18 +15,18 @@ export function ContactSection() {
   };
 
   return (
-    <section id="contact" className="py-16 lg:py-24 bg-foreground text-background">
+    <section id="contact" className="py-10 sm:py-16 lg:py-24 bg-foreground text-background">
       <div className="mx-auto max-w-7xl px-4 lg:px-8">
-        <div className="grid lg:grid-cols-2 gap-12 items-start">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 sm:gap-12 items-start">
           {/* Left: Info */}
           <div>
-            <p className="text-sm font-semibold uppercase tracking-wider text-accent mb-3">
+            <p className="text-xs sm:text-sm font-semibold uppercase tracking-wider text-accent mb-2 sm:mb-3">
               {"Бесплатный замер"}
             </p>
-            <h2 className="font-serif text-3xl sm:text-4xl font-bold text-background text-balance mb-6">
+            <h2 className="font-serif text-2xl sm:text-3xl md:text-4xl font-bold text-background text-balance mb-4 sm:mb-6">
               {"Вызовите технолога \u2014 бесплатно"}
             </h2>
-            <p className="text-background/70 leading-relaxed mb-8 max-w-md">
+            <p className="text-sm sm:text-base text-background/70 leading-relaxed mb-6 sm:mb-8 max-w-md">
               {"Это ни к чему вас не обязывает. Если цена или условия не устроят \u2014 мы просто пожмём руки и уедем."}
             </p>
 
@@ -92,7 +92,7 @@ export function ContactSection() {
           </div>
 
           {/* Right: Form */}
-          <div className="bg-background/10 backdrop-blur-sm rounded-2xl p-6 lg:p-8 border border-background/10">
+          <div className="bg-background/10 backdrop-blur-sm rounded-xl sm:rounded-2xl p-5 sm:p-6 lg:p-8 border border-background/10">
             {submitted ? (
               <div className="text-center py-12">
                 <CheckCircle2 className="h-12 w-12 text-accent mx-auto mb-4" />
