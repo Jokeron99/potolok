@@ -35,11 +35,11 @@ export function CtaBlock({
             asChild
             variant="outline"
             size="lg"
-            className="border-background/30 text-background hover:bg-background/10 text-sm sm:text-base px-6 py-5 sm:px-8 sm:py-6 w-full sm:w-auto"
+            className="border-background/30 bg-transparent text-background hover:bg-background/10 hover:text-background text-sm sm:text-base px-6 py-5 sm:px-8 sm:py-6 w-full sm:w-auto"
           >
-            <a href="tel:+79381332812">
-              <Phone className="mr-2 h-4 w-4" />
-              +7 (938) 133-28-12
+            <a href="tel:+79381332812" className="flex items-center text-inherit">
+              <Phone className="mr-2 h-4 w-4 shrink-0" />
+              {"+7 (938) 133-28-12"}
             </a>
           </Button>
         </div>
