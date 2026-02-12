@@ -1,5 +1,8 @@
 import type { Metadata, Viewport } from "next";
 import { Inter, Playfair_Display } from "next/font/google";
+import { Header } from "@/components/header";
+import { Footer } from "@/components/footer";
+import { FloatingCta } from "@/components/floating-cta";
 
 import "./globals.css";
 
@@ -13,7 +16,7 @@ export const metadata: Metadata = {
   title:
     "Альянс Мастеров — Натяжные потолки в Ростове-на-Дону | Монтаж без пыли",
   description:
-    "Премиальные натяжные потолки с гарантией 15 лет. Монтаж без пыли за 1 день. Фиксированная цена по договору. Бесплатный замер и расчёт. Ростов-на-Дону и область.",
+    "Премиальные натяжные потолки с гарантией 15 лет. Монтаж без пыли за 1 день. Фиксированная цена по договору. Бесплатный замер и расчёт. Ростов-на-Дону.",
 };
 
 export const viewport: Viewport = {
@@ -30,7 +33,12 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="ru" className={`${inter.variable} ${playfair.variable}`}>
-      <body className="font-sans antialiased">{children}</body>
+      <body className="font-sans antialiased">
+        <Header />
+        {children}
+        <Footer />
+        <FloatingCta />
+      </body>
     </html>
   );
 }

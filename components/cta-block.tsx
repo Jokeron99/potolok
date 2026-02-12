@@ -37,9 +37,9 @@ export function CtaBlock({
             size="lg"
             className="border-background/30 text-background hover:bg-background/10 text-base px-8 py-6"
           >
-            <a href="tel:+79515100351">
+            <a href="tel:+79381332812">
               <Phone className="mr-2 h-4 w-4" />
-              +7 (951) 510-03-51
+              +7 (938) 133-28-12
             </a>
           </Button>
         </div>

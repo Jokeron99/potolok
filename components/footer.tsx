@@ -1,5 +1,6 @@
 "use client";
 
+import Link from "next/link";
 import { Phone, MapPin, Clock } from "lucide-react";
 
 export function Footer() {
@@ -27,7 +28,7 @@ export function Footer() {
               </div>
             </div>
             <p className="text-sm text-background/60 leading-relaxed">
-              {"Премиальные натяжные потолки с гарантией 15 лет в Ростове-на-Дону и области."}
+              {"Премиальные натяжные потолки с гарантией 15 лет в Ростове-на-Дону."}
             </p>
           </div>
 
@@ -56,14 +57,24 @@ export function Footer() {
           {/* Services */}
           <div>
             <p className="font-semibold text-background mb-4">{"Услуги"}</p>
-            <ul className="flex flex-col gap-2 text-sm text-background/60">
-              <li>{"Матовые потолки"}</li>
-              <li>{"Глянцевые потолки"}</li>
-              <li>{"Тканевые потолки"}</li>
-              <li>{"Световые линии"}</li>
-              <li>{"Теневой профиль"}</li>
-              <li>{"Парящий профиль"}</li>
-            </ul>
+            <nav className="flex flex-col gap-2 text-sm">
+              {[
+                { label: "Матовые потолки", href: "/uslugi/matovye" },
+                { label: "Глянцевые потолки", href: "/uslugi/glyancevye" },
+                { label: "Сатиновые потолки", href: "/uslugi/satinovye" },
+                { label: "Тканевые потолки", href: "/uslugi/tkanevye" },
+                { label: "Световые линии", href: "/uslugi/svetovye-linii" },
+                { label: "Теневой профиль", href: "/uslugi/tenevoj-profil" },
+              ].map((item) => (
+                <Link
+                  key={item.href}
+                  href={item.href}
+                  className="text-background/60 hover:text-accent transition-colors"
+                >
+                  {item.label}
+                </Link>
+              ))}
+            </nav>
           </div>
 
           {/* Contact */}
@@ -71,19 +82,19 @@ export function Footer() {
             <p className="font-semibold text-background mb-4">{"Контакты"}</p>
             <div className="flex flex-col gap-3">
               <a
-                href="tel:+79515100351"
+                href="tel:+79381332812"
                 className="flex items-center gap-2 text-sm text-background/80 hover:text-accent transition-colors"
               >
                 <Phone className="h-4 w-4 text-accent" />
-                +7 (951) 510-03-51
+                +7 (938) 133-28-12
               </a>
               <div className="flex items-center gap-2 text-sm text-background/60">
                 <MapPin className="h-4 w-4 text-accent" />
-                {"Ростов-на-Дону и область"}
+                {"Ростов-на-Дону"}
               </div>
               <div className="flex items-center gap-2 text-sm text-background/60">
                 <Clock className="h-4 w-4 text-accent" />
-                {"Пн\u2013Сб: 08:00\u201322:00"}
+                {"Пн\u2013Вс: 08:00\u201319:00"}
               </div>
             </div>
           </div>
@@ -93,9 +104,9 @@ export function Footer() {
           <p className="text-xs text-background/40">
             {"\u00A9 2026 \u0410\u043B\u044C\u044F\u043D\u0441 \u041C\u0430\u0441\u0442\u0435\u0440\u043E\u0432. \u0412\u0441\u0435 \u043F\u0440\u0430\u0432\u0430 \u0437\u0430\u0449\u0438\u0449\u0435\u043D\u044B."}
           </p>
-          <p className="text-xs text-background/40">
+          <Link href="/privacy" className="text-xs text-background/40 hover:text-accent transition-colors">
             {"Политика конфиденциальности"}
-          </p>
+          </Link>
         </div>
       </div>
     </footer>

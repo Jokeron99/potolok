@@ -74,19 +74,19 @@ export function ContactSection() {
 
             <div className="flex flex-col gap-3 mt-8 pt-8 border-t border-background/10">
               <a
-                href="tel:+79515100351"
+                href="tel:+79381332812"
                 className="flex items-center gap-2 text-background font-semibold hover:text-accent transition-colors"
               >
                 <Phone className="h-4 w-4 text-accent" />
-                +7 (951) 510-03-51
+                +7 (938) 133-28-12
               </a>
               <div className="flex items-center gap-2 text-sm text-background/60">
                 <MapPin className="h-4 w-4 text-accent" />
-                {"Ростов-на-Дону и область"}
+                {"Ростов-на-Дону"}
               </div>
               <div className="flex items-center gap-2 text-sm text-background/60">
                 <Clock className="h-4 w-4 text-accent" />
-                {"Пн\u2013Сб: 08:00\u201322:00"}
+                {"Пн\u2013Вс: 08:00\u201319:00"}
               </div>
             </div>
           </div>

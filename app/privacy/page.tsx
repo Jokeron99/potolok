@@ -81,8 +81,8 @@ export default function PrivacyPage() {
               <h2 className="text-lg font-semibold text-foreground mb-2">{"6. \u041A\u043E\u043D\u0442\u0430\u043A\u0442\u044B"}</h2>
               <p>
                 {"\u041F\u043E \u0432\u0441\u0435\u043C \u0432\u043E\u043F\u0440\u043E\u0441\u0430\u043C, \u043A\u0430\u0441\u0430\u044E\u0449\u0438\u043C\u0441\u044F \u043E\u0431\u0440\u0430\u0431\u043E\u0442\u043A\u0438 \u043F\u0435\u0440\u0441\u043E\u043D\u0430\u043B\u044C\u043D\u044B\u0445 \u0434\u0430\u043D\u043D\u044B\u0445, \u0432\u044B \u043C\u043E\u0436\u0435\u0442\u0435 \u0441\u0432\u044F\u0437\u0430\u0442\u044C\u0441\u044F \u0441 \u043D\u0430\u043C\u0438 \u043F\u043E \u0442\u0435\u043B\u0435\u0444\u043E\u043D\u0443 "}
-                <a href="tel:+79515100351" className="text-accent hover:underline font-medium">
-                  +7 (951) 510-03-51
+                <a href="tel:+79381332812" className="text-accent hover:underline font-medium">
+                  +7 (938) 133-28-12
                 </a>
                 {"."}
               </p>

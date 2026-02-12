@@ -130,11 +130,11 @@ export function Header() {
         {/* Right side */}
         <div className="flex items-center gap-3">
           <a
-            href="tel:+79515100351"
+            href="tel:+79381332812"
             className="hidden md:flex items-center gap-2 text-sm font-semibold text-foreground"
           >
             <Phone className="h-4 w-4 text-accent" />
-            +7 (951) 510-03-51
+            +7 (938) 133-28-12
           </a>
           <Button
             asChild
@@ -227,11 +227,11 @@ export function Header() {
             </Link>
 
             <a
-              href="tel:+79515100351"
+              href="tel:+79381332812"
               className="flex items-center gap-2 text-sm font-semibold text-accent py-2.5 border-t border-border mt-2 pt-4"
             >
               <Phone className="h-4 w-4" />
-              +7 (951) 510-03-51
+              +7 (938) 133-28-12
             </a>
           </nav>
         </div>
